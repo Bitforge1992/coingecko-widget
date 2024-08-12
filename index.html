@@ -2,8 +2,23 @@
 <html>
 <head>
     <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script>
+    <style>
+        /* Ensure that the body and html elements fill the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style the widget container to fill the viewport */
+        .livecoinwatch-widget-3 {
+            width: 100vw; /* 100% of viewport width */
+            height: 100vh; /* 100% of viewport height */
+            box-sizing: border-box; /* Include border in width/height calculation */
+        }
+    </style>
 </head>
-<body style="margin:0;padding:0;">
+<body>
     <div class="livecoinwatch-widget-3" 
          lcw-base="USD" 
          lcw-d-head="true" 
